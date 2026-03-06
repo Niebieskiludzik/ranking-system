@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking Chwa³y</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Ranking Chwa³y</h1>
+
+  <section id="form-section">
+    <h2>Dodaj rundê</h2>
+    <label>Kto ocenia:
+      <select id="rater">
+        <option value="patryk">Patryk</option>
+        <option value="czarek">Czarek</option>
+        <option value="wiktor_p">Wiktor P</option>
+        <option value="wiktor_h">Wiktor H</option>
+        <option value="tymek">Tymek</option>
+      </select>
+    </label>
+    <div id="scores">
+      <!-- tutaj bêd¹ inputy ocen dla pozosta³ych graczy -->
+    </div>
+    <label>Has³o: <input type="password" id="password"></label>
+    <button id="submit-round">Dodaj rundê</button>
+  </section>
+
+  <section id="ranking-section">
+    <h2>Ranking</h2>
+    <table id="ranking-table">
+      <thead>
+        <tr><th>Miejsce</th><th>Gracz</th><th>Punkty</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section id="podium-section">
+    <h2>Podium</h2>
+    <div id="podium"></div>
+  </section>
+
+  <section id="history-section">
+    <h2>Historia rund</h2>
+    <ul id="history"></ul>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="firebase.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
