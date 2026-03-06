@@ -2,4 +2,7 @@ body { font-family: Arial; background: #111; color: white; padding: 20px; }
 h1, h2 { color: gold; }
 table { width: 100%; border-collapse: collapse; margin-top: 10px; }
 th, td { border: 1px solid white; padding: 5px; text-align: center; }
-button { padding: 5px 10px; margin-top: 10px; }
+button { padding: 5px 10px; margin-top: 10px; cursor: pointer; }
+input { width: 50px; }
+section { margin-bottom: 30px; }
+#podium p { font-size: 1.2em; }
